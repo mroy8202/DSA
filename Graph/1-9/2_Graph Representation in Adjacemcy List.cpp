@@ -16,6 +16,14 @@ int main() {
         adj[v].push_back(u);
     }
 
+    // printing the list
+    for(int i = 0; i < n; i++) {
+        cout << i << " -> ";
+        for(auto it: adj[i]) {
+            cout << it << " ";
+        } cout << endl;
+    }
+
     return 0;
 }
 // time complexity: O(n)
