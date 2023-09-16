@@ -1,7 +1,7 @@
 // TC: O(V+E)
 // SC: O(2V) = O(V)
 class Solution {
-    private:
+  private:
     void dfs(int node, vector<int>& vis, stack<int>& st, vector<int> adj[]) {
         vis[node] = 1;
         
@@ -13,7 +13,7 @@ class Solution {
         st.push(node);
     }
     
-	public:
+  public:
 	//Function to return list containing vertices in Topological order. 
 	vector<int> topoSort(int V, vector<int> adj[]) {
 	    vector<int> vis(V, 0);
