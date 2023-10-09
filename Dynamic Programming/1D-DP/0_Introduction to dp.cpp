@@ -1,4 +1,13 @@
-// Fibbonacci Number
+/* TRICK TO SOLVE A RECURSION PROBLEM
+    1. Try to represent the problem in terms of indexes.
+    2. Try all possible choices / ways at every index according to the problem statement.
+    3. If the question states - 
+        * Count all the ways - return sum of all choices / ways.
+        * Find maximum / minimum - return the choices/way with maximum/minimum output.
+*/
+
+// LINK: https://leetcode.com/problems/fibonacci-number/description/
+// NOTES: https://takeuforward.org/data-structure/dynamic-programming-introduction/
 
 // Memoization | Top-Down Approach (we are going from n to the base case)
 // TC: O(n)
