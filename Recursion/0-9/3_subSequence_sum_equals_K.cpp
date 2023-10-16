@@ -11,15 +11,15 @@ void subSequenceSumK(vector<int> arr, int i, int k, vector<int> ds, int sum) {
         return;
     }
 
-    // exclude ith number
-    subSequenceSumK(arr, i+1, k, ds, sum);
-
-    // include ith number 
+        // include ith number 
     sum += arr[i];
     ds.push_back(arr[i]);
     subSequenceSumK(arr, i+1, k, ds, sum);
-    // ds.pop_back();
-    // sum -= arr[i];
+    ds.pop_back();
+    sum -= arr[i];
+
+    // exclude ith number
+    subSequenceSumK(arr, i+1, k, ds, sum);
 }
 
 int main() {
